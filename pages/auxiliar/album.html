@@ -5,33 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fotos</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            background-image: url('assets/images/wallpapersden.com_frieren-hd-frieren-beyond-journey-s-end_4500x2761.jpg');
-            margin: 0;
+            background-image: url('../../assets/images/wallpapersden.com_frieren-hd-frieren-beyond-journey-s-end_4500x2761.jpg');
+            background-size: cover;
+            background-attachment: fixed;
         }
     </style>
 </head>
 
 <body>
-    <!--testes em imagens maps-->
+    <main class="container" style="padding: var(--space-xl) var(--space-lg);">
+        <div class="card">
+            <h2>Testes em Imagens e Mapas</h2>
+            
+            <img src="../../assets/images/regencygirl123-landscape-10149106.jpg" width="300" usemap="#sol" alt="Paisagem">
 
-    <img src="assets/images/regencygirl123-landscape-10149106.jpg" width="300" usemap="#sol">
+            <map name="sol">
+                <area title="terceiro teste" href="tabelas.html" coords="98,98,98" shape="circle">
+            </map>
 
-    <map name="sol">
-        <area title="terceiro teste" href="tabelas.html" coords="98,98,98" shape="circle">
-    </map>
+            <img src="../../assets/images/anime-style-illustration-rose.jpg" width="300" usemap="#luar" alt="Rosa anime">
 
-    <img src="assets/images/anime-style-illustration-rose.jpg" width="300" usemap="#luar">
-
-    <map name="luar">
-        <area target="_self" alt="teste de tabelas e iframe" title="teste de tabelas e iframe"
-            href="/auxiliar/combinaçao.html" coords="98,98,98" shape="circle">
-    </map>
+            <map name="luar">
+                <area target="_self" alt="teste de tabelas e iframe" title="teste de tabelas e iframe"
+                    href="combinaçao.html" coords="98,98,98" shape="circle">
+            </map>
+        </div>
+    </main>
 </body>
 
 </html>

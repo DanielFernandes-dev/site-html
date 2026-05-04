@@ -5,108 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>v5</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: gray;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body>
+<body style="background-color: var(--background);">
 
-    <a href="/index.html" target="o teste 5">abrir</a> <br><br>
-    <iframe name="o teste 5" width="600" height="300"> abrir</iframe>
+    <main class="container" style="padding: var(--space-xl) var(--space-lg);">
+        <div class="card">
+            <h2>Testes de Mídia e Formulário</h2>
+            
+            <p><a href="../../index.html" target="o teste 5">abrir página inicial</a></p>
+            <iframe name="o teste 5" width="600" height="300">abrir</iframe>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/K38qXVELnJo?si=Bq6bfR6_7epKiDwp"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="mt-lg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/K38qXVELnJo?si=Bq6bfR6_7epKiDwp"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
-    <form>
-        <label for="campo">Nome</label> <br>
-        <input id="campo" type="text" placeholder="digite seu nome aqui" required> <br><br>
+            <form class="mt-lg">
+                <h3>Formulário de Contato</h3>
+                
+                <label for="campo">Nome</label>
+                <input id="campo" type="text" placeholder="digite seu nome aqui" required>
 
-        <label for="senha">senha</label> <br>
-        <input id="senha" type="password" placeholder="digite seu senha aqui" required> <br><br>
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" placeholder="digite sua senha aqui" required>
 
-        <label for="gmail">email</label> <br>
-        <input id="gmail" type="email" placeholder="digite seu email aqui" required> <br><br>
+                <label for="gmail">Email</label>
+                <input id="gmail" type="email" placeholder="digite seu email aqui" required>
 
-        <input id="enviar" type="submit" value="enviar" required> <br><br>
+                <input id="enviar" type="submit" value="enviar">
 
-        <label for="gato">gato</label> <br>
-        <input id="gato" type="radio" name="animal" value="gato" required> <br>
+                <fieldset style="border: none; padding: 0; margin: var(--space-md) 0;">
+                    <legend style="font-weight: 500; margin-bottom: var(--space-sm);">Escolha um animal:</legend>
+                    <label for="gato"><input id="gato" type="radio" name="animal" value="gato"> Gato</label><br>
+                    <label for="cachorro"><input id="cachorro" type="radio" name="animal" value="cachorro"> Cachorro</label><br>
+                    <label for="cobra"><input id="cobra" type="radio" name="animal" value="cobra"> Cobra</label>
+                </fieldset>
 
-        <label for="cachorro">cachorro</label> <br>
-        <input id="cachorro" type="radio" name="animal" value="cachorro" required> <br>
+                <h3>o que você tem em casa?</h3>
+                <label for="item1"><input id="item1" type="checkbox" name="item1" value="TV"> TV</label><br>
+                <label for="item2"><input id="item2" type="checkbox" name="item2" value="cadeira"> Cadeira</label><br>
+                <label for="item3"><input id="item3" type="checkbox" name="item3" value="sapato"> Sapato</label>
 
-        <label for="cobra">cobra</label> <br>
-        <input id="cobra" type="radio" name="animal" value="cobra" required> <br>
+                <select>
+                    <option selected disabled value="selecione">Escolha uma cor</option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="amarelo">Amarelo</option>
+                    <option value="azul">Azul</option>
+                </select>
 
-        <h2>o que voce tem em casa?</h2>
+                <textarea name="mensagem" placeholder="digite sua mensagem" rows="15"></textarea>
+            </form>
 
-        <input id="item1" type="checkbox" name="item1" value="TV">
-        <label for="item1">TV</label> <br>
+            <button class="mt-md">clique aqui</button>
 
-        <input id="item2" type="checkbox" name="item2" value="cadeira">
-        <label for="item2">cadeira</label> <br>
+            <div class="mt-lg">
+                <audio controls>
+                    <source src="../../assets/audios/WhatsApp Ptt 2026-04-27 at 18.56.57.ogg" type="audio/ogg">
+                </audio>
 
-        <input id="item3" type="checkbox" name="item3" value="sapato">
-        <label for="item3">sapato</label> <br>
+                <audio controls>
+                    <source src="../../assets/audios/WhatsApp Audio 2026-04-27 at 19.02.31.ogg" type="audio/ogg">
+                </audio>
 
-        <select>
-            <option selected disabled value="selecione">vermelho</option>
-            <option value="vermelho">vermelho</option>
-            <option value="amarelo">amarelo</option>
-            <option value="azul">azul</option>
-        </select> <br> <br>
+                <audio controls>
+                    <source src="../../assets/audios/WhatsApp Audio 2026-04-27 at 19.02.31(1).ogg" type="audio/ogg">
+                </audio>
+            </div>
 
-        <textarea name="mensagem" placeholder="digite sua mensagem" rows="15" cols="55"></textarea>
+            <div class="mt-lg">
+                <video poster="../../assets/images/hot-anime-girl-lying-on-her-bed-with-backless-pink-skirt-wallpaper-2560x1080_14.jpg"
+                    width="100%" controls>
+                    <source src="../../assets/videos/WhatsApp Video 2026-04-27 at 19.11.21(1).mp4" type="video/mp4">
+                </video>
 
-    </form> <br>
+                <video poster="../../assets/images/anime-style-illustration-rose.jpg" width="100%" controls>
+                    <source src="../../assets/videos/WhatsApp Video 2026-04-27 at 19.14.35.mp4" type="video/mp4">
+                </video>
 
-    <button>clique aqui</button> <br> <br>
+                <video poster="../../assets/images/images.jpeg" width="100%" controls>
+                    <source src="../../assets/videos/WhatsApp Video 2026-04-27 at 19.14.54.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
 
-    <audio controls>
-        <source src="assets/audios/WhatsApp Ptt 2026-04-27 at 18.56.57.ogg" type="audio/ogg">
-    </audio>
-
-    <audio controls>
-        <source src="assets/audios/WhatsApp Audio 2026-04-27 at 19.02.31.ogg" type="audio/ogg">
-    </audio>
-
-    <audio controls>
-        <source src="assets/audios/WhatsApp Audio 2026-04-27 at 19.02.31(1).ogg" type="audio/ogg">
-    </audio>
-
-    <br><br>
-
-    <video poster="assets/images/hot-anime-girl-lying-on-her-bed-with-backless-pink-skirt-wallpaper-2560x1080_14.jpg"
-        width="50%" controls>
-        <source src="assets/videos/WhatsApp Video 2026-04-27 at 19.11.21(1).mp4" type="">
-    </video>
-
-    <br>
-
-    <video poster="assets/images/anime-style-illustration-rose.jpg" width="35%%" controls>
-        <source src="assets/videos/WhatsApp Video 2026-04-27 at 19.14.35.mp4" type="">
-    </video>
-
-    <br>
-
-    <video poster="assets/images/images.jpeg" width="50%" controls>
-        <source src="assets/videos/WhatsApp Video 2026-04-27 at 19.14.54.mp4" type="">
-    </video>
-
-
-    <h1>
-        <a href="/rotas/v1.html"> ir para o primeiro teste</a>
-    </h1> <br>
+        <div class="card mt-lg">
+            <h3>Navegação</h3>
+            <p><a href="../../pages/rotas/v1.html">ir para o primeiro teste</a></p>
+            <p><a href="../../pages/audios.html">teste da tag de audios</a></p>
+            <p><a href="../../pages/instagram.html">teste da tag video</a></p>
+            <p><a href="../../pages/rotas/v6.html">ir para o sexto teste</a></p>
+        </div>
+    </main>
 
     <h2>
         <a href="/audios.html"> teste da tag de audios</a>
