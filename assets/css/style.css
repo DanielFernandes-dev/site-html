@@ -152,12 +152,13 @@ a:hover {
 
 /* ===== Cards ===== */
 .card {
+    height: 100%;
+    width: 80%;
     background: var(--surface);
     border-radius: var(--radius-md);
     padding: var(--space-lg);
     box-shadow: var(--shadow-sm);
     margin-bottom: var(--space-lg);
-    transition: box-shadow 0.2s ease;
 }
 
 .card:hover {
